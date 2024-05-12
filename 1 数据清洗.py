@@ -3,7 +3,7 @@ import numpy as np
 from statsmodels.tsa.arima.model import ARIMA
 
 # 读取数据
-data_path = 'data/states_time_data.csv'
+data_path = 'data/full_raw.csv'
 data = pd.read_csv(data_path)
 
 # 显示数据的前几行以检查格式

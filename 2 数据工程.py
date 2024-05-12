@@ -66,9 +66,12 @@ reframed.to_csv(processed_data_path, index=False)
 # 保存归一化模型
 features_scaler_path = 'models/features_scaler.pkl'
 targets_scaler_path = 'models/targets_scaler.pkl'
+label_encoder_path = 'models/district_encoder.pkl'
 joblib.dump(features_scaler, features_scaler_path)
 joblib.dump(targets_scaler, targets_scaler_path)
+joblib.dump(label_encoder, label_encoder_path)
 
 print("特征工程完成，处理后的数据已保存至：", processed_data_path)
 print("特征归一化模型已保存至：", features_scaler_path)
 print("目标归一化模型已保存至：", targets_scaler_path)
+print("地区编码器已保存至：", label_encoder_path)

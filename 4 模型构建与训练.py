@@ -31,7 +31,7 @@ model.compile(loss='mean_squared_error', optimizer=Adam())
 model.summary()
 
 # 训练模型
-history = model.fit(features, targets, epochs=500, batch_size=32, validation_split=0.2, verbose=1)
+history = model.fit(features, targets, epochs=1500, batch_size=32, validation_split=0.2, verbose=1)
 
 # 保存模型
 model_path = 'models/lstm_model.h5'

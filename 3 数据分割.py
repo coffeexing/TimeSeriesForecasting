@@ -5,7 +5,7 @@ data_path = 'data/processed_states_data_supervised.csv'
 data = pd.read_csv(data_path)
 
 # 顺序划分
-def split_data_sequential(data, test_size=12*48):
+def split_data_sequential(data, test_size=12):
     """
     按时间顺序将数据集的最后 `test_size` 个月的数据作为测试集。
     """
